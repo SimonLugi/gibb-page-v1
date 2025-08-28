@@ -22,7 +22,7 @@ document.getElementById('domainForm').addEventListener('submit', function(e) {
     // Mailto Link öffnen
     const subject = encodeURIComponent("Neuer Domain-Eintrag");
     const bodyMail = encodeURIComponent(`Domain: ${domain}\nHosting Anbieter: ${provider}\nTLDs: ${tlds}\nBemerkungen: ${notes}`);
-    window.location.href = `mailto:deine-email@example.com?subject=${subject}&body=${bodyMail}`;
+    window.location.href = `mailto:support.themodcraft.net?subject=${subject}&body=${bodyMail}`;
 
     this.reset();
 });
