@@ -133,7 +133,7 @@ section > *:first-child {
     border-collapse: separate;
     border-spacing: 0;
     border-radius: 10px;
-    display: grid;
+    display: table;
     overflow: scroll;
 }
 
@@ -199,4 +199,8 @@ footer {
     #info {
         grid-template-columns: 1fr;
     }
+    #domainTable{
+        display: grid;
+    }
+
 }
