@@ -7,86 +7,88 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body data-theme="light">
+
 <header>
     <h1>Top Domain Hostings</h1>
     <nav>
         <a href="#domains">Domains</a>
         <a href="#formular">Neuer Eintrag</a>
         <a href="#info">Info</a>
-        <button id="themeToggle">Thema wechseln</button>
+        <button id="themeToggle">Theme</button>
     </nav>
 </header>
+<main>
+    <section class="container" id="domains">
+        <h2>Top 5 Domain-Registrare</h2>
+        <table id="domainTable">
+            <thead>
+            <tr>
+                <th>Domain</th>
+                <th>Hosting Anbieter</th>
+                <th>TLDs</th>
+                <th>Bemerkungen</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>GoDaddy</td>
+                <td>GoDaddy Inc.</td>
+                <td>.com, .net, .org, .info, .co, .us, .de, .xyz</td>
+                <td>Größter Registrar weltweit</td>
+            </tr>
+            <tr>
+                <td>Namecheap</td>
+                <td>Namecheap Inc.</td>
+                <td>.com, .net, .org, .io, .tech, .xyz, .me, .co</td>
+                <td>Beliebt für günstige Domains und Privatsphäre</td>
+            </tr>
+            <tr>
+                <td>Google Domains</td>
+                <td>Google LLC</td>
+                <td>.com, .net, .org, .dev, .app, .page, .tech</td>
+                <td>Einfacher Registrar mit Google Workspace Integration</td>
+            </tr>
+            <tr>
+                <td>Bluehost</td>
+                <td>Endurance International Group</td>
+                <td>.com, .net, .org, .info, .biz, .us</td>
+                <td>Domain + Hosting Pakete</td>
+            </tr>
+            <tr>
+                <td>1&1 IONOS</td>
+                <td>IONOS SE</td>
+                <td>.com, .net, .org, .de, .eu, .info, .biz</td>
+                <td>Europäischer Marktführer</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
 
-<section id="domains">
-    <h2>Top 5 Domain-Registrare</h2>
-    <table id="domainTable">
-        <thead>
-        <tr>
-            <th>Domain</th>
-            <th>Hosting Anbieter</th>
-            <th>TLDs</th>
-            <th>Bemerkungen</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>GoDaddy</td>
-            <td>GoDaddy Inc.</td>
-            <td>.com, .net, .org, .info, .co, .us, .de, .xyz</td>
-            <td>Größter Registrar weltweit</td>
-        </tr>
-        <tr>
-            <td>Namecheap</td>
-            <td>Namecheap Inc.</td>
-            <td>.com, .net, .org, .io, .tech, .xyz, .me, .co</td>
-            <td>Beliebt für günstige Domains und Privatsphäre</td>
-        </tr>
-        <tr>
-            <td>Google Domains</td>
-            <td>Google LLC</td>
-            <td>.com, .net, .org, .dev, .app, .page, .tech</td>
-            <td>Einfacher Registrar mit Google Workspace Integration</td>
-        </tr>
-        <tr>
-            <td>Bluehost</td>
-            <td>Endurance International Group</td>
-            <td>.com, .net, .org, .info, .biz, .us</td>
-            <td>Domain + Hosting Pakete</td>
-        </tr>
-        <tr>
-            <td>1&1 IONOS</td>
-            <td>IONOS SE</td>
-            <td>.com, .net, .org, .de, .eu, .info, .biz</td>
-            <td>Europäischer Marktführer</td>
-        </tr>
-        </tbody>
-    </table>
-</section>
+    <section class="container" id="formular">
+        <h2>Neuen Eintrag hinzufügen</h2>
+        <form id="domainForm">
+            <input type="text" id="domain" placeholder="Domain" required>
+            <input type="text" id="provider" placeholder="Hosting Anbieter" required>
+            <input type="text" id="tlds" placeholder="TLDs (z.B. .com, .net)">
+            <input type="text" id="notes" placeholder="Bemerkungen">
+            <button type="submit">Absenden</button>
+        </form>
+    </section>
 
-<section id="formular">
-    <h2>Neuen Eintrag hinzufügen</h2>
-    <form id="domainForm">
-        <input type="text" id="domain" placeholder="Domain" required>
-        <input type="text" id="provider" placeholder="Hosting Anbieter" required>
-        <input type="text" id="tlds" placeholder="TLDs (z.B. .com, .net)">
-        <input type="text" id="notes" placeholder="Bemerkungen">
-        <button type="submit">Absenden</button>
-    </form>
-</section>
-
-<section id="info">
-    <h2>Info</h2>
-    <article>
-        <p>Diese Webseite zeigt die Top 5 Domain-Registrare weltweit. Sie können eigene Domains hinzufügen und direkt per E-Mail einreichen.</p>
-    </article>
-    <aside>
-        <p>Teil 1: Einstieg und Grundlagen HTML/CSS</p>
-        <p>Teil 2: Formular und Tabellen</p>
-    </aside>
-</section>
-
+    <section class="container" id="info">
+        <h2>Info</h2>
+        <div></div>
+        <article>
+            <p>Diese Webseite zeigt die Top 5 Domain-Registrare weltweit. Sie können eigene Domains hinzufügen und direkt per E-Mail einreichen.</p>
+        </article>
+        <aside>
+            <p>Teil 1: Einstieg und Grundlagen HTML/CSS</p>
+            <p>Teil 2: Formular und Tabellen</p>
+        </aside>
+    </section>
+</main>
 <footer>
-    <p>&copy; 2025 Deine Webseite</p>
+    <p>&copy; 2025 Info Webseite</p>
 </footer>
 
 <script src="script.js"></script>
